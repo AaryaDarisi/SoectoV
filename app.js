@@ -14,10 +14,10 @@ const products = [
 ];
 
 function renderProductCards() {
-    const productGrid = document.querySelector('.product-grid');
+    const productGrid = document.querySelector('.grid');
     products.forEach(product => {
         const card = document.createElement('div');
-        card.classList.add('product-card');
+        card.classList.add('card');
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}" >
             <h3>${product.name}</h3>
