@@ -1,4 +1,3 @@
-// Sample product data
 const products = [
     {
         id: 1,
@@ -12,10 +11,8 @@ const products = [
         description: 'Immerse yourself in virtual worlds and gaming experiences.',
         image: 'https://plus.unsplash.com/premium_photo-1682123725103-75b18625c59d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
-    // Add more products as needed
 ];
 
-// Function to render product cards
 function renderProductCards() {
     const productGrid = document.querySelector('.product-grid');
     products.forEach(product => {
@@ -30,12 +27,4 @@ function renderProductCards() {
     });
 }
 
-// Call the renderProductCards function on page load
 window.addEventListener('DOMContentLoaded', renderProductCards);
-
-// Add interactivity to the "Explore" button
-const exploreBtn = document.querySelector('.explore-btn');
-exploreBtn.addEventListener('click', () => {
-    // Add your desired functionality here, e.g., modal, scrolling, etc.
-    console.log('Explore button clicked!');
-});
